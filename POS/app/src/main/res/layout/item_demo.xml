@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              android:padding="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_8">
+        <TextView
+            android:id="@+id/tv_order_retailfrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/colorPrimary"
+            android:visibility="visible"/>
+    <TextView
+        android:id="@+id/tv_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_order_retailfrom"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_accounts_pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_14"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginBottom="@dimen/size_10">
+        <TextView
+            android:id="@+id/tv_pay_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_pay_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_14"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+</LinearLayout>

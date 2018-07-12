@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_cancel_pos_cashier"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45"
+            android:background="@color/active_color"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="取消"
+                android:textSize="@dimen/font_16"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:layout_above="@id/ll_cancel_pos_cashier"
+            android:id="@+id/rv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_single_weixin_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_90"
+            android:layout_margin="@dimen/size_20"
+            android:background="@drawable/corners_bg"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/weixin"
+                android:text="微信支付"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_single_ali_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_90"
+            android:layout_marginBottom="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/corners_bg"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/alipay"
+                android:text="支付宝"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_single_union_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_90"
+            android:layout_marginBottom="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/corners_bg"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/unionpay"
+                android:text="银联支付"
+                android:drawablePadding="20dp"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_single_cash_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_90"
+            android:layout_marginBottom="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_marginRight="@dimen/size_20"
+            android:background="@drawable/corners_bg"
+            android:gravity="center"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/cash"
+                android:text="现金"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_cancel_cashier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/active_color"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginBottom="@dimen/size_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:textColor="@color/white"
+                android:text="返回"
+                android:textSize="@dimen/font_18"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

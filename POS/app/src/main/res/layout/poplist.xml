@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"   
+    android:gravity="right"
+    android:id="@+id/hotalk_menu_view_layout" >      
+    <!-- 显示的listview -->  
+        <ListView android:id="@+id/menu_listview" 
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content" 
+            android:fadingEdge="none"
+            android:focusable="true" 
+            android:longClickable="true" 
+            android:scrollbarSize="0sp"         
+            android:scrollbarStyle="insideOverlay" 
+            android:background="@color/black"
+            android:dividerHeight="1px"
+            android:cacheColorHint="@color/white">
+    </ListView>    
+</RelativeLayout> 

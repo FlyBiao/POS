@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_trace.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_trace.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_post.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_post.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_put.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_put.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_head.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_head.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_options.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_options.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_head.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_head.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_patch.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_patch.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_des.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_des.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_get.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_get.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_patch.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_patch.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_get.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_get.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_delete.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_delete.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_options.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_options.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_put.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_put.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_delete.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_delete.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_trace.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_trace.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_post.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_post.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\nohttp_des.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\nohttp_des.png"
+    },
+    {
+        "merged": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "E:\\Workspace\\sw_project\\POS\\NEW\\POS\\sample\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    }
+]

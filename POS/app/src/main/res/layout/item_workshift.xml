@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_monthly"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="@drawable/order_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp" >
+
+        <TextView
+            android:id="@+id/tv_workshift_name"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:text="晚班"
+            android:textColor="@color/c1"
+            android:textSize="@dimen/font_22" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

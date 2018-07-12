@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"     
+    android:gravity="center_vertical" 
+    android:orientation="vertical" > 
+    <!-- 显示内容 --> 
+    <TextView 
+        android:id="@+id/textview" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:minHeight="60dip"
+        android:layout_marginLeft="12dip" 
+        android:layout_marginRight="12dip" 
+        android:paddingTop="6dip" 
+        android:paddingBottom="6dip" 
+        android:textSize="@dimen/size_22"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+ 
+</LinearLayout> 

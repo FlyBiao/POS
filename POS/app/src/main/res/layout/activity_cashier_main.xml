@@ -1,0 +1,119 @@
+<com.cesaas.android.pos.test.utils.SlidingMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_menu"
+    xmlns:fgb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    fgb:rightPadding="120dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/layout_menu"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EFEFEF"
+            android:orientation="vertical">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                layout="@layout/title_bar"
+                android:id="@+id/title_bar" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/consumption_corner"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="181dp"
+                android:id="@+id/linearLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:maxLength="9"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textColor="#444444"
+                        android:textColorHint="#ffffff"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:lines="2"
+                        android:layout_height="match_parent"
+                        android:id="@+id/editMemberAmount"
+                        android:inputType="numberDecimal"
+                        android:numeric="decimal"
+                        android:textSize="40sp"
+                        android:gravity="center"
+                        android:enabled="true"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_tv_show_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center|bottom"
+                    android:textSize="@dimen/font_16"
+                    android:layout_marginTop="@dimen/size_20"/>
+
+            </LinearLayout>
+
+            <GridView
+                android:horizontalSpacing="2dp"
+                android:verticalSpacing="2dp"
+                android:inputType="numberDecimal"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:id="@+id/gridview"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="更多"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_cashier"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:background="#4caf50"
+                    android:textColor="@color/white"
+                    android:text="收款"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.cesaas.android.pos.test.utils.SlidingMenu>

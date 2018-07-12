@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10"
+        android:background="@drawable/base_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40"
+            android:gravity="center"
+            android:text="请输入款号"
+            android:textColor="@color/base_text_font_color_black"
+            android:textSize="@dimen/font_16"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_15"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:background="@drawable/button_org_bg"
+                android:layout_marginLeft="@dimen/size_15"
+                android:layout_marginRight="@dimen/size_15"
+                android:orientation="horizontal">
+                <com.cesaas.android.pos.utils.MClearEditText
+                    android:id="@+id/et_style_code"
+                    android:layout_width="0dp"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:focusableInTouchMode="true"
+                    android:hint="请输入商品款号"
+                    android:inputType="phone"
+                    android:textColor="@color/c1"
+                    android:textColorHint="@color/c3"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14.0sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/common_divider_line"
+            android:layout_marginTop="@dimen/size_20"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_45"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/base_text_font_color_black"
+                android:gravity="center"
+                android:text="返回"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_button_background"/>
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/base_text_font_color_black"
+                android:text="确定"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

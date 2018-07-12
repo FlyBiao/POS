@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/black">
+
+    <include layout="@layout/base_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/base_content_bg"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            style="@style/common_divider_line"/>
+
+        <View
+            style="@style/common_divider_line"/>
+
+        <Switch
+            android:id="@+id/sc_hide_job_clerk"
+            android:layout_width="match_parent"
+            android:padding="@dimen/size_15"
+            android:layout_height="wrap_content"
+            android:text="隐藏在职店员"
+            android:visibility="gone"/>
+
+        <View
+            style="@style/common_divider_line"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_upload_log"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_ellipse_orange_bg"
+            android:layout_height="@dimen/size_45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="上传订单日志"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_del_log"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_ellipse_orange_bg"
+            android:layout_height="@dimen/size_45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="清理多余数据"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jiesuan"
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_width="match_parent"
+            android:background="@drawable/button_ellipse_orange_bg"
+            android:layout_height="@dimen/size_45"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="设置批量结算"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,248 @@
+<com.cesaas.android.pos.view.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/swipe_back_layout"
+     android:fitsSystemWindows="true"
+     android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_pos"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_55"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/icon_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_16"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_pos_order_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="支付类型"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_16"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_10"
+            android:orientation="vertical"
+            android:padding="@dimen/size_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值金额: "
+                    android:textSize="@dimen/font_20"/>
+
+                <TextView
+                    android:id="@+id/tv_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0元 "
+                    android:textColor="@color/red_normal"
+                    android:textSize="@dimen/font_20"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(满100送5元)"
+                    android:textSize="@dimen/font_18"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_show_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginLeft="@dimen/size_10"
+                android:background="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text=""
+                android:textSize="@dimen/font_14"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/rv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_weixin_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_bg"
+                    android:drawableLeft="@mipmap/weixin"
+                    android:layout_marginLeft="@dimen/size_10"
+
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/size_20"
+                    android:text="微信"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_alipay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_bg"
+                    android:drawableLeft="@mipmap/alipay"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/size_20"
+                    android:text="支付宝"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/size_10">
+
+                <TextView
+                    android:id="@+id/tv_union_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_bg"
+                    android:drawableLeft="@mipmap/unionpay"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:padding="@dimen/size_25"
+                    android:text="银联"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/size_10"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_cash_pay"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/corners_bg"
+                    android:drawableLeft="@mipmap/cash"
+                    android:drawablePadding="25dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/size_20"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_marginRight="@dimen/size_10"
+                    android:text="现金"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_show_amounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10"
+                android:background="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text=""
+                android:textSize="@dimen/font_16"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.cesaas.android.pos.view.SwipeBackLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_pos_order_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_55"
+        android:background="@color/colorPrimary" >
+
+        <LinearLayout
+            android:id="@+id/ll_pos_order_list_back"
+            android:layout_width="@dimen/size_120"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="返回"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账单详情"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_refund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="退款"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/rl_pos_order_title"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/color_film_list_item_press_bg">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:padding="@dimen/size_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/black"
+                    android:text="订单金额："/>
+                <TextView
+                    android:id="@+id/tv_consume_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/size_25"
+                android:paddingRight="@dimen/size_10"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/black"
+                    android:text="营业员："/>
+                <TextView
+                    android:id="@+id/tv_cashier_staff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_16"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/tv_show_pay_msg"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_order_info"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_16"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_account_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:divider="@color/white"
+            android:dividerHeight="0px" ></ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/green_pressed"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_print"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/white"
+            android:text="重新打印"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

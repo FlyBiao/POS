@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_20"
+    android:layout_marginBottom="@dimen/size_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_settle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16"/>
+        <TextView
+            android:id="@+id/tv_pay_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_toRightOf="@id/iv_settle_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_cashier_pay_accounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_16"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16"
+            android:text="实收金额"/>
+
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_16"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16"
+            android:text="支付笔数"/>
+
+        <TextView
+            android:id="@+id/tv_pay_order_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_16"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16"
+            android:text="会员优惠"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_16"
+            android:text="￥0.0"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_16"
+            android:text="退款金额"/>
+
+        <TextView
+            android:id="@+id/tv_refund_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_16"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/size_20"
+        android:background="@color/common_line"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

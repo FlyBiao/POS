@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:id="@+id/rl_pos"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/size_55"
+            android:background="@color/colorPrimary" >
+
+            <LinearLayout
+                android:id="@+id/ll_check_accounts_back"
+                android:layout_width="@dimen/size_120"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:src="@mipmap/icon_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textSize="@dimen/font_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <com.cesaas.android.pos.menu.DropdownButton
+                android:id="@+id/chooseType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.cesaas.android.pos.custom.RefreshAndLoadMoreView
+            android:id="@+id/refresh_pay_and_load_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/rgb_line"
+            android:scrollbars="none"
+            android:dividerHeight="1px"
+            android:listSelector="#00000000" >
+
+            <com.cesaas.android.pos.custom.LoadMoreListView
+                android:id="@+id/load_pay_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/rgb_line"
+                android:dividerHeight="1px"
+                android:listSelector="#00000000" />
+        </com.cesaas.android.pos.custom.RefreshAndLoadMoreView>
+
+        <View
+            android:id="@+id/mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="200dp"
+            android:orientation="vertical">
+
+            <com.cesaas.android.pos.menu.DropdownListView
+                android:id="@+id/dropdownType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_not_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/font_32"
+        android:textColor="@color/black"
+        android:text="暂无数据！"
+        android:visibility="gone"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

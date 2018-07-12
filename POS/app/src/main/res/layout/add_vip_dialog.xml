@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:background="@color/white"
+    android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:background="@drawable/dialog_bg"
+		android:layout_marginTop="@dimen/size_10"
+		android:orientation="vertical">
+
+		<!--添加优惠券-->
+		<LinearLayout
+			android:id="@+id/ll_query_vip"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textColor="@color/black"
+					android:textSize="@dimen/font_16"
+					android:gravity="center"
+					android:text="添加会员"/>
+
+				<ImageView
+					android:id="@+id/iv_add_scan_vip_mobile"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="@dimen/size_30"
+					android:src="@mipmap/vip_scan"/>
+			</RelativeLayout>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.3dp"
+				android:background="@color/common_line"
+				android:layout_marginBottom="@dimen/size_10"
+				android:layout_marginTop="@dimen/size_10"
+				android:layout_marginRight="@dimen/size_10"
+				android:layout_gravity="center"/>
+
+			<EditText
+				android:id="@+id/et_vip_mobile"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:layout_margin="@dimen/size_10"
+				android:layout_marginBottom="@dimen/size_10"
+				android:textSize="@dimen/font_14"
+				android:inputType="phone"
+				android:gravity="center"
+				android:hint="请输入会员手机号"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/size_45"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:id="@+id/ll_sure_vip_mobile"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:background="@color/base_text_color"
+					android:gravity="center"
+					android:layout_weight="1">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/white"
+						android:text="确定"
+						android:textSize="@dimen/font_16" />
+
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/ll_cancel_vip_mobile"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:background="@color/common_line"
+					android:layout_weight="1">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center"
+						android:textColor="@color/black"
+						android:text="返回"
+						android:textSize="@dimen/font_16" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+    
+</LinearLayout>

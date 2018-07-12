@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.cesaas.android.pos"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 64
+        versionName "2.9.5.0"
+        //分包配置方法数超过 64K 的应用
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/PosCoreAPI_exceptionCode2.jar')
+    compile files('libs/core-3.1.1-SNAPSHOT.jar')
+    compile project(':nohttp')
+    compile files('libs/library.jar')
+    compile project(':CBDialoglibrary')
+    compile files('libs/apache-httpcomponents-httpcore.jar')
+    compile project(':recyclerview-swipe')
+    compile files('libs/badgeview.jar')
+    //图片加载 Gilde
+    compile project(':toprightmenu')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile project(':materialdialoglibrary')
+    compile 'com.android.support:multidex:1.0.1'
+    //扫描库
+    //    compile 'com.google.zxing:core:3.2.1'
+    //提示加载框
+    compile 'com.zyao89:zloading:1.0.8'
+
+    compile project(':IMLib')
+    compile project(':IMKit')
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'com.alibaba:fastjson:1.2.11'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.2.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.8@aar'
+    compile 'sing.materialdatetimepicker:library:1.0.1'
+    testCompile 'junit:junit:4.12'
+}

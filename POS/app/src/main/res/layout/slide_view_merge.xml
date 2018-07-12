@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/view_shop_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/shop_holder"
+        android:layout_width="315dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center_vertical">
+        
+        <TextView
+            android:id="@+id/shop_peice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/floralwhite"
+            android:textSize="@dimen/font_18"
+            android:background="@color/common_red"
+            android:text="价格" />
+        
+        <TextView
+            android:id="@+id/shop_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/floralwhite"
+            android:background="@color/base_text_color"
+            android:text="数量" />
+
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_18"
+            android:background="@drawable/holder_bg"
+            android:gravity="center"
+            android:textColor="@color/floralwhite"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/tv_gifts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_18"
+            android:background="@color/base_text_color"
+            android:gravity="center"
+            android:textColor="@color/floralwhite"
+            android:text="赠品"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</merge>

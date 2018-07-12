@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+                android:background="@color/white"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"
+                android:gravity="center"
+                android:text="请选择支付方式"/>
+
+            <TextView
+                android:id="@+id/tv_order_pay_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/font_20"
+                android:layout_marginRight="@dimen/size_30"
+                android:text="返回"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/common_line"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_15"
+            android:layout_marginRight="@dimen/size_15"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/ll_order_weixin_pay"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/corners_bg"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/weixin"
+                android:text="微信支付"
+                android:drawablePadding="20dp"
+                android:textSize="@dimen/font_22" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_order_ali_pay"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corners_bg"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/alipay"
+                android:text="支付宝"
+                android:drawablePadding="20dp"
+                android:textSize="@dimen/font_22" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_order_union_pay"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corners_bg"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/unionpay"
+                android:text="银联支付"
+                android:drawablePadding="20dp"
+                android:textSize="@dimen/font_22" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_order_cash_pay"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/corners_bg"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:drawableLeft="@mipmap/cash"
+                android:text="现金"
+                android:drawablePadding="20dp"
+                android:textSize="@dimen/font_22" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

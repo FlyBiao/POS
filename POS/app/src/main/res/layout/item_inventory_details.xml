@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="?selectableItemBackground"
+              android:layout_margin="@dimen/size_10"
+              android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/size_80"
+       android:background="@drawable/button_org_bg"
+       android:layout_marginTop="@dimen/size_5"
+       android:gravity="center_vertical"
+       android:paddingRight="@dimen/size_10"
+       android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="@dimen/size_5"
+           android:layout_height="match_parent"
+           android:background="@color/base_color"/>
+
+       <TextView
+           android:id="@+id/tv_shelf_goods"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/size_10"
+           android:text="货架1"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="right"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="盘点数:"/>
+           <TextView
+               android:id="@+id/tv_inventory_number"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="233"/>
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

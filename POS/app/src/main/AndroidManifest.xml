@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.cesaas.android.pos">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- POS -->
+    <uses-permission android:name="com.wangpos.cashiercoreapp.coreapi"/>
+
+    <!-- 二维码权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:name=".global.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".base.WelcomesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name="scanner.CaptureActivity"/>
+        <activity
+            android:name=".activity.order.DownOrderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.qr.CreatePayQRImageViewActivity">
+        </activity>
+        <activity android:name=".activity.cashier.CheckAccountsActivity">
+        </activity>
+        <activity android:name=".activity.order.CheckAccountDetailActivity">
+        </activity>
+        <activity android:name=".activity.qr.GetSinglePayQrCodeActivity">
+        </activity>
+        <activity android:name=".activity.cashier.CashierHomeActivity"/>
+        <activity android:name=".activity.cashier.CashierMainActivity">
+        </activity>
+        <activity android:name=".activity.cashier.WeiXinAndAliPayActivity">
+        </activity>
+        <activity android:name=".activity.cashier.WeiXinAndAliPaySingleActivity">
+        </activity>
+        <activity android:name=".activity.cashier.SettleAccountsActivity">
+        </activity>
+        <activity android:name=".activity.qr.GetOrderPayQrCodeActivity">
+        </activity>
+        <activity android:name=".activity.cashier.CheckAccountsListActivity">
+        </activity>
+        <activity android:name=".pos.PosActiveActivity">
+        </activity>
+        <activity android:name=".activity.user.LoginActivity">
+        </activity>
+        <activity android:name=".activity.marketing.MarketingActivityList">
+        </activity>
+        <activity android:name=".activity.order.RefundActivity">
+        </activity>
+        <activity android:name=".activity.order.CreateOrderActivity">
+        </activity>
+        <activity android:name=".activity.order.WaitPayOrderDetailActivity">
+        </activity>
+        <activity android:name=".test.TestActivity">
+        </activity>
+        <activity android:name=".storedvalue.ui.VipInfoActivity">
+        </activity>
+        <activity android:name=".storedvalue.ui.GetTradeListActivity">
+        </activity>
+        <activity android:name=".storedvalue.ui.PaymentTypeActivity">
+        </activity>
+        <activity android:name=".storedvalue.ui.WeiXinAliPayActivity"/>
+        <activity android:name=".storedvalue.ui.StoredValuePayQrCodeActivity"/>
+        <activity android:name=".storedvalue.ui.SummaryActivity">
+        </activity>
+        <activity
+            android:name=".test.ScanerActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".inventory.activity.ZxingScanActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".inventory.activity.CheckInventoryDifferenceActivity"/>
+        <activity android:name=".inventory.activity.CreateInventoryActivity"/>
+        <activity android:name=".inventory.activity.InventoryDetailsActivity"/>
+        <activity android:name=".inventory.activity.InventoryMainActivity"/>
+        <activity android:name=".inventory.activity.InventoryShelvesDetailsActivity"/>
+        <activity android:name=".test.TestRongColudActivity"/>
+
+        <!-- 融云测试 环境 -->
+        <!--  -->
+        <!--<meta-data-->
+            <!--android:name="RONG_CLOUD_APP_KEY"-->
+            <!--android:value="ik1qhw091mn5p"/>-->
+
+        <!-- 融云生产 环境 -->
+        <!--  -->
+         <meta-data
+         android:name="RONG_CLOUD_APP_KEY"
+         android:value="pwe86ga5eok76"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.cesaas.android.pos.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path"/>
+        </provider>
+
+        <receiver
+            android:name=".rongcloud.listener.SealNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED"/>
+            </intent-filter>
+        </receiver>
+        <!-- 会话列表 -->
+        <activity
+            android:name=".rongcloud.activity.ConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="com.cesaas.android.pos"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="conversationlist"/>
+            </intent-filter>
+        </activity>
+        <!-- 会话页面 -->
+        <activity
+            android:name=".rongcloud.activity.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="com.cesaas.android.pos"
+                    android:pathPrefix="/conversation"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+        <!-- 聚合会话列表 -->
+        <activity
+            android:name=".rongcloud.activity.SubConversationListActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="com.cesaas.android.counselor.order"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.user.SettingActivity">
+        </activity>
+        <activity android:name=".activity.order.OrderDetailActivity">
+        </activity>
+        <activity android:name=".activity.cashier.AbnormalOrderActivity"/>
+        <activity android:name=".activity.cashier.AbnormalOrderInfoActivity"/>
+        <activity android:name=".activity.cashier.PayListActivity"/>
+        <activity android:name=".activity.order.PayDetailsActivity"/>
+        <activity android:name=".storedvalue.ui.GetTradeDetailsActivity"/>
+    </application>
+
+</manifest>

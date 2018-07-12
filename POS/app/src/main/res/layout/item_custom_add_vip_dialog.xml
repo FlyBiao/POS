@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/size_300"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_bg"
+        android:layout_marginTop="@dimen/size_20"
+        android:orientation="vertical">
+
+        <!--添加手机号查询会员-->
+        <LinearLayout
+            android:id="@+id/ll_query_vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18"
+                    android:gravity="center"
+                    android:text="会员查询"/>
+
+                <ImageView
+                    android:id="@+id/iv_add_scan_vip"
+                    android:layout_width="@dimen/size_30"
+                    android:layout_height="@dimen/size_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size_20"
+                    android:src="@mipmap/vip_scan"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/common_line"
+                android:layout_marginBottom="@dimen/size_10"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginRight="@dimen/size_10"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/et_add_vip_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_margin="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_10"
+                android:textSize="@dimen/font_16"
+                android:inputType="phone"
+                android:gravity="center"
+                android:hint="请输入手机号"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/common_line"
+                android:layout_marginTop="@dimen/size_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_sure_query_vip"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#4caf50"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="确定"
+                        android:textSize="@dimen/font_18" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_cancel_back_cashier"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/common_line"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="返回"
+                        android:textSize="@dimen/font_18" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--会员信息-->
+        <LinearLayout
+            android:id="@+id/ll_query_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/size_25"
+            android:orientation="vertical"
+            android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_20"
+                    android:gravity="center"
+                    android:text="会员信息"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/common_line"
+                android:layout_margin="@dimen/size_10"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_30"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18"
+                        android:text="会员名称："/>
+                    <TextView
+                        android:id="@+id/tv_vip_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/c5"
+                        android:textSize="@dimen/font_18"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18"
+                        android:text="手机号："/>
+                    <TextView
+                        android:id="@+id/tv_vip_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/c5"
+                        android:textSize="@dimen/font_18"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18"
+                        android:text="所属门店："/>
+                    <TextView
+                        android:id="@+id/tv_vip_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/c5"
+                        android:textSize="@dimen/font_18"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18"
+                        android:text="剩余积分："/>
+                    <TextView
+                        android:id="@+id/tv_vip_point"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/c5"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_18"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18"
+                        android:text="会员折扣："/>
+                    <TextView
+                        android:id="@+id/tv_vip_discount"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/c5"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_18"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_18"
+                        android:text="会员等级："/>
+                    <TextView
+                        android:id="@+id/tv_vip_grade"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/c5"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_18"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vip_info_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_sure_add_vip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#4caf50"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="确定"
+                    android:textSize="@dimen/font_18" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_cancel_back_query"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/common_line"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="返回"
+                    android:textSize="@dimen/font_18" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

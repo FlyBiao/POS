@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_pos"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_55"
+        android:background="@color/colorPrimary" >
+
+        <LinearLayout
+            android:id="@+id/ll_refund_order_list_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="返回"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账单列表"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/rl_pos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cesaas.android.pos.custom.RefreshAndLoadMoreView
+            android:id="@+id/refresh_refund_and_load_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/rgb_line"
+            android:scrollbars="none"
+            android:dividerHeight="1px"
+            android:listSelector="#00000000" >
+
+            <com.cesaas.android.pos.custom.LoadMoreListView
+                android:id="@+id/load_more_refund_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/rgb_line"
+                android:dividerHeight="1px"
+                android:listSelector="#00000000" />
+        </com.cesaas.android.pos.custom.RefreshAndLoadMoreView>
+
+    </LinearLayout>
+
+</RelativeLayout>
